@@ -2,26 +2,28 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="联系我 | AJMD">
+<Layout title="联系我 | AJMD — AI+财务合作咨询">
   <section style="padding: 2rem 0; max-width: 600px;">
     <p class="section-label">联系我</p>
     <h1>一起聊聊<span class="gradient">AI+财务</span></h1>
     <p class="section-subtitle">欢迎交流、合作、吐槽。</p>
 
-    <div class="card" style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
-      <p style="font-size: 2rem;">📕</p>
-      <div>
-        <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem;">小红书</p>
-        <p style="font-size: 1.1rem; color: var(--accent); font-weight: 600;">@卡戴珊玩财务</p>
-        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">每日更新AI+财务提效技巧</p>
+    <a href="https://xiaohongshu.com" target="_blank" style="text-decoration:none;">
+      <div class="card" style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
+        <p style="font-size: 2rem;">📕</p>
+        <div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem;">小红书（最活跃）</p>
+          <p style="font-size: 1.1rem; color: var(--accent); font-weight: 600;">@卡戴珊玩财务</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">每日更新，私信回复最快</p>
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="card" style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;">
       <p style="font-size: 2rem;">📧</p>
       <div>
         <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem;">邮箱</p>
-        <p style="font-size: 1.1rem; color: #fff; font-weight: 500;">ajmd@ajmd.me</p>
+        <p style="font-size: 1.1rem; color: var(--text); font-weight: 500;">ajmd@ajmd.me</p>
         <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">商务合作 / 咨询</p>
       </div>
     </div>
@@ -30,16 +32,16 @@ import Layout from '../layouts/Layout.astro';
       <p style="font-size: 2rem;">💬</p>
       <div>
         <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem;">微信</p>
-        <p style="font-size: 1.1rem; color: #fff; font-weight: 500;">添加好友备注"AI财务"</p>
-        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">产品上线后会开通更多联系方式</p>
+        <p style="font-size: 1.1rem; color: var(--text); font-weight: 500;">添加好友备注"AI财务"</p>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">产品上线后开通更多联系方式</p>
       </div>
     </div>
 
-    <div class="hr" />
-
-    <div style="text-align: center; padding: 1rem 0;">
-      <p style="color: var(--text-muted); font-size: 0.9rem;">目前主要通过小红书更新内容</p>
-      <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary mt-2">关注小红书 →</a>
+    <hr class="hr" />
+    <div style="padding: 1.5rem; background: var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); text-align:center;">
+      <p style="font-weight:600; color:var(--text); margin-bottom:0.3rem;">🎁 免费领5个财务AI提示词</p>
+      <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;">关注小红书 → 私信"提示词" → 自动领取</p>
+      <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary">去小红书领取</a>
     </div>
   </section>
 </Layout>

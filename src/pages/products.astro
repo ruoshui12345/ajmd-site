@@ -2,17 +2,27 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="产品 | AJMD">
+<Layout title="产品 | AJMD — AI+财务效率工具">
   <section style="padding: 2rem 0;">
     <p class="section-label">产品</p>
-    <h1>把经验做成<span class="gradient">可用的产品</span></h1>
-    <p class="section-subtitle">财务经验 + AI能力 = 你拿来就能用的效率工具。</p>
+    <h1>把经验做成<span class="gradient">可用的工具</span></h1>
+    <p class="section-subtitle">财务经验 + AI能力 = 拿来就能用的效率工具。</p>
+
+    <!-- 免费产品 -->
+    <div style="padding: 2rem; background: linear-gradient(135deg, var(--accent-light), #fff); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <p style="font-size: 0.8rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem;">🎁 免费</p>
+        <h3 style="margin:0; color:var(--text);">财务AI提示词5例</h3>
+        <p style="margin:0.3rem 0 0; color:var(--text-secondary); font-size:0.9rem;">发票管理、对账分析、月结报告——5个高频场景，关注小红书后私信"提示词"领取</p>
+      </div>
+      <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary">免费领取</a>
+    </div>
 
     <div class="grid-2">
       <div class="card" style="display:flex; flex-direction:column;">
-        <p style="font-size: 2rem; margin-bottom: 0.8rem;">📄</p>
-        <h3 style="color:#fff;">AI财务提示词50例</h3>
-        <p style="flex:1;">覆盖发票管理、报销审核、月结分析、预算编制等8大财务岗位场景。每篇带完整提示词+使用说明+产出示例。</p>
+        <p style="font-size: 2rem; margin-bottom: 0.5rem;">📄</p>
+        <h3 style="color:var(--text);">AI财务提示词50例</h3>
+        <p style="flex:1;">覆盖发票管理、报销审核、月结分析、预算编制等8大财务岗位。每篇带完整提示词+使用说明+产出示例。</p>
         <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
           <span class="tag">即将上线</span>
           <span style="color: var(--accent); font-size: 0.9rem; font-weight: 600;">¥19.9</span>
@@ -20,19 +30,9 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="card" style="display:flex; flex-direction:column;">
-        <p style="font-size: 2rem; margin-bottom: 0.8rem;">📋</p>
-        <h3 style="color:#fff;">财务对账AI模板</h3>
-        <p style="flex:1;">贴数据→给指令→出报告，3步搞定差异分析。适合电商/贸易/服务业等常见行业场景。</p>
-        <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
-          <span class="tag">即将上线</span>
-          <span style="color: var(--accent); font-size: 0.9rem; font-weight: 600;">¥9.9</span>
-        </div>
-      </div>
-
-      <div class="card" style="display:flex; flex-direction:column;">
-        <p style="font-size: 2rem; margin-bottom: 0.8rem;">🎓</p>
-        <h3 style="color:#fff;">1对1效率咨询</h3>
-        <p style="flex:1;">针对你的实际工作场景，设计专属的AI提效方案。涵盖流程优化、提示词定制、工具选型。</p>
+        <p style="font-size: 2rem; margin-bottom: 0.5rem;">🎓</p>
+        <h3 style="color:var(--text);">1对1效率咨询</h3>
+        <p style="flex:1;">针对你的实际工作场景，设计专属AI提效方案。涵盖流程优化、提示词定制、工具选型。</p>
         <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
           <span class="tag">即将上线</span>
           <span style="color: var(--accent); font-size: 0.9rem; font-weight: 600;">¥199</span>
@@ -40,21 +40,29 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="card" style="display:flex; flex-direction:column;">
-        <p style="font-size: 2rem; margin-bottom: 0.8rem;">💬</p>
-        <h3 style="color:#fff;">AI财务交流群</h3>
-        <p style="flex:1;">和同行一起交流AI在财务中的应用。每周分享一个实用技巧和最新工具。</p>
+        <p style="font-size: 2rem; margin-bottom: 0.5rem;">💬</p>
+        <h3 style="color:var(--text);">AI财务交流群</h3>
+        <p style="flex:1;">和同行一起交流AI在财务中的应用。每周分享一个实用技巧。</p>
         <div style="margin-top: 1rem;">
           <span class="tag">免费</span>
         </div>
       </div>
+
+      <div class="card" style="display:flex; flex-direction:column;">
+        <p style="font-size: 2rem; margin-bottom: 0.5rem;">📋</p>
+        <h3 style="color:var(--text);">财务对账AI模板</h3>
+        <p style="flex:1;">贴数据→给指令→出报告，3步搞定差异分析。适合电商/贸易/服务业等常见行业。</p>
+        <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+          <span class="tag">即将上线</span>
+          <span style="color: var(--accent); font-size: 0.9rem; font-weight: 600;">¥9.9</span>
+        </div>
+      </div>
     </div>
 
-    <div class="hr" />
-
-    <div style="padding: 3rem; background: linear-gradient(135deg, var(--bg-card), transparent); border: 1px solid var(--border); border-radius: var(--radius); text-align: center;">
-      <p style="font-size: 1.2rem; color: #fff; font-weight: 600; margin-bottom: 0.5rem;">想要第一时间获取产品上线通知？</p>
-      <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">关注小红书 <strong style="color: var(--accent);">@卡戴珊玩财务</strong></p>
-      <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary">关注小红书 →</a>
+    <hr class="hr" />
+    <div style="text-align:center;padding:1rem 0;">
+      <p style="color:var(--text-muted); font-size:0.9rem;">产品上线通知第一时间在小红书发布</p>
+      <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary mt-2">关注小红书获取通知 →</a>
     </div>
   </section>
 </Layout>

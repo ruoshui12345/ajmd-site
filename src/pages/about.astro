@@ -2,57 +2,43 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="关于我 | AJMD">
-  <section style="padding: 2rem 0;">
+<Layout title="关于我 | AJMD — 会计出身，AI加持">
+  <section style="padding: 2rem 0; max-width: 800px;">
     <p class="section-label">关于我</p>
     <h1>会计出身，<span class="gradient">AI加持</span></h1>
-    <p class="section-subtitle" style="max-width: 600px;">不是能力多强，是找到了对的方法。</p>
+    <p class="section-subtitle">不是能力多强，是找到了对的方法。</p>
 
-    <div class="hr" style="margin: 2rem 0;"></div>
+    <hr class="hr" style="margin: 2rem 0;" />
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-      <div>
-        <p class="text-lg">
-          会计专业本科，1999年生。<br/>
-          工作第5年做到财务经理。<br/>
-          不是经验最丰富的，但可能是进步最快的。
-        </p>
-        <p>
-          2025年开始研究AI+财务，发现一件事——<br/>
-          <strong style="color:#fff;">大多数财务人不是不想用AI，是不知道怎么用。</strong>
-        </p>
-        <p>
-          于是我做了「卡戴珊玩财务」这个账号，<br/>
-          用反差的方式讲AI+财务干货，<br/>
-          让本来枯燥的内容变得看得进去、学得会、用得上。
-        </p>
-        <p>
-          全栈财务 + AI实操，<br/>
-          正在把踩过的坑、试过有用的方法，<br/>
-          做成产品帮更多财务人提效。
-        </p>
-      </div>
+    <p class="text-lg">
+      会计专业本科，1999年生，工作第5年做到财务经理。
+    </p>
+    <p>
+      不是经验最丰富的，但可能是进步最快的。<br/>
+      秘诀？不是加班，是**用对工具**。
+    </p>
+    <p>
+      2025年开始深入AI+财务领域，发现大多数财务人不是不想用AI，是不知道怎么用。<br/>
+      于是我做了「卡戴珊玩财务」，用反差的方式讲AI+财务干货。
+    </p>
+    <p>
+      目前专注三件事：
+    </p>
+    <ul style="color: var(--text-secondary); margin: 1rem 0 1.5rem 1.5rem; line-height: 2;">
+      <li><strong style="color:var(--text);">内容创作</strong> — 小红书日更，让枯燥的财务知识变得有趣</li>
+      <li><strong style="color:var(--text);">提示词产品</strong> — 把财务场景的AI用法做成模板</li>
+      <li><strong style="color:var(--text);">效率咨询</strong> — 帮财务人用AI实现效率提升</li>
+    </ul>
 
-      <div>
-        <div class="card" style="padding: 2rem;">
-          <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">专业标签</p>
-          <div style="margin-bottom: 1.5rem;">
-            <span class="tag">会计专业</span>
-            <span class="tag">财务经理</span>
-            <span class="tag">AI实操</span>
-            <span class="tag">小红书博主</span>
-            <span class="tag">提示词设计</span>
-            <span class="tag">效率控</span>
-          </div>
-
-          <hr class="hr" style="margin: 1rem 0;" />
-
-          <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.8rem;">关注我</p>
-          <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary" style="width:100%; justify-content: center;">
-            小红书 @卡戴珊玩财务
-          </a>
-        </div>
-      </div>
+    <div class="card" style="padding: 1.5rem; margin-top: 1rem;">
+      <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.8rem;">专业领域</p>
+      <span class="tag">会计专业</span>
+      <span class="tag">财务经理</span>
+      <span class="tag">AI实操</span>
+      <span class="tag">提示词设计</span>
+      <span class="tag">效率控</span>
+      <hr style="border:none;border-top:1px solid var(--border);margin:1rem 0;" />
+      <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;">关注小红书 @卡戴珊玩财务</a>
     </div>
   </section>
 </Layout>
