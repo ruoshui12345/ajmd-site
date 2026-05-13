@@ -4,14 +4,18 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="关于我 | AJMD">
   <section style="padding: 2rem 0;">
-    <h1>关于我</h1>
-    
-    <div style="display:flex; gap:3rem; align-items:start; flex-wrap:wrap;">
-      <div style="flex:1; min-width:280px;">
-        <p style="color:#ccc; font-size:1.1rem;">
+    <p class="section-label">关于我</p>
+    <h1>会计出身，<span class="gradient">AI加持</span></h1>
+    <p class="section-subtitle" style="max-width: 600px;">不是能力多强，是找到了对的方法。</p>
+
+    <div class="hr" style="margin: 2rem 0;"></div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+      <div>
+        <p class="text-lg">
           会计专业本科，1999年生。<br/>
           工作第5年做到财务经理。<br/>
-          不是能力多强，是找到了对的方法。
+          不是经验最丰富的，但可能是进步最快的。
         </p>
         <p>
           2025年开始研究AI+财务，发现一件事——<br/>
@@ -28,22 +32,26 @@ import Layout from '../layouts/Layout.astro';
           做成产品帮更多财务人提效。
         </p>
       </div>
-      <div style="flex:0 0 200px; background:#111; border:1px solid #1a1a1a; border-radius:8px; padding:1.5rem; text-align:center;">
-        <p style="font-size:0.85rem; color:#555;">个人标签</p>
-        <div style="margin-top:0.8rem;">
-          <span class="tag">会计专业</span>
-          <span class="tag">财务经理</span>
-          <span class="tag">AI实操</span>
-          <span class="tag">小红书博主</span>
-          <span class="tag">提示词设计</span>
-          <span class="tag">效率控</span>
+
+      <div>
+        <div class="card" style="padding: 2rem;">
+          <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">专业标签</p>
+          <div style="margin-bottom: 1.5rem;">
+            <span class="tag">会计专业</span>
+            <span class="tag">财务经理</span>
+            <span class="tag">AI实操</span>
+            <span class="tag">小红书博主</span>
+            <span class="tag">提示词设计</span>
+            <span class="tag">效率控</span>
+          </div>
+
+          <hr class="hr" style="margin: 1rem 0;" />
+
+          <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.8rem;">关注我</p>
+          <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary" style="width:100%; justify-content: center;">
+            小红书 @卡戴珊玩财务
+          </a>
         </div>
-        <hr style="border:none;border-top:1px solid #1a1a1a;margin:1.5rem 0;" />
-        <p style="font-size:0.85rem; color:#555;">关注我</p>
-        <p style="margin-top:0.5rem;">
-          小红书<br/>
-          <span style="color:#ff6b6b;">卡戴珊玩财务</span>
-        </p>
       </div>
     </div>
   </section>

@@ -4,43 +4,53 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="博客 | AJMD">
   <section style="padding: 2rem 0;">
-    <h1>博客</h1>
-    <p style="color:#888; margin-bottom:2rem;">AI+财务的实操经验、效率方法和踩坑记录。</p>
+    <p class="section-label">博客</p>
+    <h1>AI+财务<span class="gradient">实操笔记</span></h1>
+    <p class="section-subtitle">踩过的坑、试过有用的方法，都记在这里。</p>
 
     <div class="card blog-card">
       <p class="date">2026-05-13</p>
       <h3><a href="/blog/ai-duizhang">以前觉得AI做账不靠谱，现在真香了</a></h3>
-      <p>发票整理、报销审核、月结差异——3个复制粘贴就能用的AI场景。</p>
-      <span class="tag">AI财务</span>
-      <span class="tag">实操</span>
+      <p>发票整理、报销审核、月结差异——3个复制粘贴就能用的AI场景，让你从埋头苦干到到点下班。</p>
+      <div style="margin-top:0.5rem;">
+        <span class="tag">AI财务</span>
+        <span class="tag">实操</span>
+      </div>
     </div>
 
     <div class="card blog-card">
       <p class="date">2026-05-12</p>
       <h3><a href="/blog/excel-vs-ai">做了5年财务才明白：Excel再6，不如会问AI</a></h3>
-      <p>3个AI提问公式，让工作效率翻倍。</p>
-      <span class="tag">AI财务</span>
-      <span class="tag">提示词</span>
+      <p>3个AI提问公式，让工作效率翻倍——不加班才是真本事。</p>
+      <div style="margin-top:0.5rem;">
+        <span class="tag">提示词</span>
+        <span class="tag">效率</span>
+      </div>
     </div>
 
     <div class="card blog-card">
       <p class="date">2026-05-09</p>
       <h3><a href="/blog/3-duizhang-moban">3个AI提示词搞定银行对账</a></h3>
-      <p>从2小时到3分钟，对账差异分析的AI模板。</p>
-      <span class="tag">对账</span>
-      <span class="tag">模板</span>
+      <p>从2小时到3分钟，对账差异分析的AI模板，拿走直接用。</p>
+      <div style="margin-top:0.5rem;">
+        <span class="tag">对账</span>
+        <span class="tag">模板</span>
+      </div>
     </div>
 
     <div class="card blog-card">
       <p class="date">2026-05-09</p>
       <h3><a href="/blog/jiejie-8h-2h">月底结账从8小时→2小时，我用了3个AI提示词</a></h3>
-      <p>月结效率提升4倍的核心方法。</p>
-      <span class="tag">月结</span>
-      <span class="tag">效率</span>
+      <p>月结效率提升4倍的核心方法，每个财务人都该试试。</p>
+      <div style="margin-top:0.5rem;">
+        <span class="tag">月结</span>
+        <span class="tag">效率</span>
+      </div>
     </div>
 
-    <div style="margin-top:1rem;">
-      <p style="color:#555; font-size:0.9rem;">更多文章更新中...</p>
+    <div class="mt-3" style="text-align:center; padding:3rem 0;">
+      <p style="color: var(--text-muted);">更多文章更新中...</p>
+      <p style="font-size:0.85rem; color: var(--text-muted); margin-top:0.5rem;">关注小红书 <span style="color:var(--accent);">@卡戴珊玩财务</span> 获取最新内容</p>
     </div>
   </section>
 </Layout>
