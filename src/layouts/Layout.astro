@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title = 'AJMD | 财务×AI', description = 'AI+财务副业实践者' } = Astro.props;
+const { title = '佳奈 | 财务×AI 效率专家', description = '出纳出身，5年做到财务经理。专注AI+财务提效。' } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -14,35 +14,24 @@ const { title = 'AJMD | 财务×AI', description = 'AI+财务副业实践者' } 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="AI财务,财务效率,会计,AI提示词,财务经理,卡戴珊玩财务" />
-    <meta name="author" content="佳奈" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ajmd-site-feaf.vercel.app" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
       :root {
-        --bg: #ffffff;
-        --bg-card: #f8f9fa;
-        --bg-card-hover: #f1f3f5;
-        --border: #e9ecef;
-        --border-hover: #d0d5dd;
-        --text: #1a1a2e;
-        --text-secondary: #6b7280;
-        --text-muted: #9ca3af;
-        --accent: #e74c3c;
-        --accent-light: #fef2f2;
-        --accent-glow: rgba(231, 76, 60, 0.08);
-        --radius: 12px;
-        --radius-sm: 8px;
-        --max-w: 1100px;
+        --bg: #fafaf9;
+        --card: #ffffff;
+        --border: #e5e7eb;
+        --text: #1c1917;
+        --text-secondary: #78716c;
+        --text-muted: #a8a29e;
+        --accent: #1e3a5f;
+        --accent-light: #f0f4f8;
+        --accent-glow: rgba(30, 58, 95, 0.06);
+        --radius: 10px;
       }
-
       * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
       body {
         font-family: 'Inter', 'Noto Sans SC', -apple-system, sans-serif;
         background: var(--bg);
@@ -51,151 +40,118 @@ const { title = 'AJMD | 财务×AI', description = 'AI+财务副业实践者' } 
         -webkit-font-smoothing: antialiased;
       }
 
+      .container { max-width: 1040px; margin: 0 auto; padding: 0 2rem; }
+
+      /* Nav */
       nav {
-        position: sticky; top: 0; z-index: 100;
-        backdrop-filter: blur(16px);
-        background: rgba(255,255,255,0.85);
-        border-bottom: 1px solid var(--border);
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 1.2rem 0; border-bottom: 1px solid var(--border);
       }
-      .nav-inner {
-        max-width: var(--max-w); margin: 0 auto; padding: 0 2rem;
-        height: 60px; display: flex; align-items: center; justify-content: space-between;
-      }
-      .logo { font-size: 1.2rem; font-weight: 800; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
-      .logo-accent { color: var(--accent); }
-      .nav-links { display: flex; gap: 0.25rem; }
-      .nav-links a {
-        color: var(--text-secondary); text-decoration: none;
-        font-size: 0.875rem; font-weight: 500;
-        padding: 0.5rem 0.9rem; border-radius: var(--radius-sm);
-        transition: all 0.2s;
-      }
-      .nav-links a:hover { color: var(--text); background: var(--bg-card); }
+      .logo { font-weight: 700; font-size: 1.1rem; color: var(--accent); text-decoration: none; }
+      .nav-links { display: flex; gap: 2rem; }
+      .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+      .nav-links a:hover { color: var(--accent); }
 
-      main { max-width: var(--max-w); margin: 0 auto; padding: 4rem 2rem 6rem; }
-
-      footer {
-        max-width: var(--max-w); margin: 0 auto;
-        padding: 2rem 2rem 3rem;
-        border-top: 1px solid var(--border);
-        display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+      /* Sections */
+      section { padding: 5rem 0; }
+      .section-label {
+        font-size: 0.8rem; font-weight: 600; text-transform: uppercase;
+        letter-spacing: 0.08em; color: var(--accent); margin-bottom: 1rem;
       }
-      footer p { color: var(--text-muted); font-size: 0.85rem; }
-      footer a { color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
-      footer a:hover { color: var(--accent); }
-      .footer-links { display: flex; gap: 1.5rem; }
-
-      h1 {
-        font-size: 3rem; font-weight: 800; line-height: 1.2;
-        letter-spacing: -0.02em; margin-bottom: 1.2rem;
-        color: var(--text);
-      }
-      h1 .gradient {
-        background: linear-gradient(135deg, #e74c3c, #f39c12);
-        -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      }
-      h2 { font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 1.2rem; color: var(--text); }
-      h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text); }
-      p { color: var(--text-secondary); margin-bottom: 0.8rem; font-size: 0.95rem; line-height: 1.7; }
+      h1 { font-size: 3.2rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 1.2rem; color: var(--text); }
+      h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text); }
+      h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text); }
+      p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.8rem; line-height: 1.8; }
       .text-lg { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; }
 
-      .btn {
-        display: inline-flex; align-items: center; gap: 0.4rem;
-        padding: 0.65rem 1.3rem; border-radius: var(--radius-sm);
-        font-size: 0.9rem; font-weight: 600; text-decoration: none;
-        transition: all 0.2s; cursor: pointer; border: none;
-      }
-      .btn-primary {
-        background: var(--accent); color: #fff;
-      }
-      .btn-primary:hover {
-        background: #c0392b; transform: translateY(-1px);
-      }
-      .btn-ghost {
-        background: transparent; color: var(--text);
-        border: 1px solid var(--border);
-      }
-      .btn-ghost:hover { border-color: var(--text-secondary); background: var(--bg-card); }
-
-      .card {
-        background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: var(--radius); padding: 1.5rem;
-        transition: all 0.2s;
-      }
-      .card:hover { border-color: var(--border-hover); }
-
-      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-      .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
-
+      .accent { color: var(--accent); }
       .tag {
-        display: inline-block;
-        background: var(--accent-light); color: var(--accent);
-        padding: 0.15rem 0.55rem; border-radius: 4px;
-        font-size: 0.78rem; font-weight: 500;
+        display: inline-block; background: var(--accent-light); color: var(--accent);
+        padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.78rem; font-weight: 500;
         margin-right: 0.3rem; margin-bottom: 0.3rem;
       }
+      .hr { border: none; border-top: 1px solid var(--border); margin: 0; }
 
-      .blog-card { margin-bottom: 1rem; }
-      .blog-card .date { color: var(--text-muted); font-size: 0.82rem; }
-      .blog-card h3 { margin-top: 0.2rem; }
-      .blog-card h3 a { color: var(--text); text-decoration: none; transition: color 0.2s; }
-      .blog-card h3 a:hover { color: var(--accent); }
-      .blog-card p { font-size: 0.9rem; margin-bottom: 0.5rem; }
+      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
 
-      .stat-card {
-        text-align: center; padding: 1.8rem 1rem;
-        background: linear-gradient(135deg, var(--accent-light), #fff);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
+      .card {
+        background: var(--card); border: 1px solid var(--border);
+        border-radius: var(--radius); padding: 1.8rem;
+        transition: box-shadow 0.2s;
       }
-      .stat-card .num { font-size: 2.2rem; font-weight: 800; color: var(--text); margin-bottom: 0.2rem; }
-      .stat-card .num .accent { font-size: 1rem; color: var(--accent); }
-      .stat-card .label { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+      .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
 
-      .section-label {
-        font-size: 0.8rem; font-weight: 600;
-        text-transform: uppercase; letter-spacing: 0.06em;
-        color: var(--accent); margin-bottom: 0.3rem;
+      .stat {
+        text-align: center; padding: 2rem 1rem;
       }
-      .section-subtitle { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 2rem; }
-      .hr { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+      .stat-num { font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 0.4rem; }
+      .stat-label { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
 
+      .btn {
+        display: inline-block; padding: 0.7rem 1.5rem; border-radius: var(--radius);
+        font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.2s;
+      }
+      .btn-primary { background: var(--accent); color: #fff; }
+      .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+      .btn-outline { border: 1px solid var(--border); color: var(--text); }
+      .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+      .about-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;
+      }
+      .perspective-list { list-style: none; }
+      .perspective-list li {
+        padding: 1rem 0; border-bottom: 1px solid var(--border);
+        display: flex; gap: 0.8rem; align-items: flex-start;
+      }
+      .perspective-list li:last-child { border-bottom: none; }
+      .perspective-num {
+        font-size: 0.8rem; font-weight: 700; color: var(--accent);
+        min-width: 1.8rem; padding-top: 0.1rem;
+      }
+
+      .contact-links {
+        display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;
+      }
+      .contact-links a {
+        display: flex; align-items: center; gap: 0.6rem;
+        color: var(--text-secondary); text-decoration: none;
+        font-size: 0.95rem; transition: color 0.2s;
+      }
+      .contact-links a:hover { color: var(--accent); }
+
+      /* Mobile */
       @media (max-width: 768px) {
         h1 { font-size: 2rem; }
-        .grid-2, .grid-3 { grid-template-columns: 1fr; }
-        .nav-inner { padding: 0 1rem; }
-        .nav-links a { padding: 0.4rem 0.6rem; font-size: 0.8rem; }
-        main { padding: 2rem 1rem 4rem; }
-        footer { flex-direction: column; text-align: center; }
+        .about-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        .nav-links { gap: 1rem; }
+        .nav-links a { font-size: 0.8rem; }
+        section { padding: 3rem 0; }
       }
-      .mt-1 { margin-top: 1rem; }
-      .mt-2 { margin-top: 2rem; }
-      .mt-3 { margin-top: 3rem; }
     </style>
   </head>
   <body>
-    <nav>
-      <div class="nav-inner">
-        <a href="/" class="logo"><span class="logo-accent">AJ</span>MD</a>
+    <div class="container">
+      <nav>
+        <a href="/" class="logo">佳奈</a>
         <div class="nav-links">
-          <a href="/">首页</a>
-          <a href="/about">关于</a>
-          <a href="/blog">博客</a>
-          <a href="/products">产品</a>
-          <a href="/contact">联系</a>
+          <a href="#about">关于</a>
+          <a href="#perspective">观点</a>
+          <a href="#proof">数据</a>
+          <a href="#contact">联系</a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+
     <main>
       <slot />
     </main>
-    <footer>
-      <p>© 2026 AJMD · 财务 × AI</p>
-      <div class="footer-links">
-        <a href="https://xiaohongshu.com" target="_blank">小红书</a>
-        <a href="https://github.com/ruoshui12345" target="_blank">GitHub</a>
-        <a href="/contact">联系</a>
-      </div>
-    </footer>
+
+    <div class="container">
+      <footer style="padding: 2rem 0 3rem; border-top: 1px solid var(--border); text-align: center;">
+        <p style="color: var(--text-muted); font-size: 0.82rem;">© 2026 佳奈 · Built with Astro</p>
+      </footer>
+    </div>
   </body>
 </html>
