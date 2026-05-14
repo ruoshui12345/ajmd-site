@@ -5,71 +5,98 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
   <!-- Hero -->
   <div class="container">
-    <section style="padding: 6rem 0 4rem;">
-      <p style="font-size:1rem; color:var(--text-secondary); margin-bottom:0.5rem;">李宗奇 · 财务经理</p>
-      <h1>
-        出纳出身，<br/>
-        <span style="color:var(--accent);">5年做到财务经理。</span>
-      </h1>
-      <p class="text-lg" style="max-width:560px; margin-bottom:2rem;">
-        不靠加班，靠效率思维。<br/>
-        现在专注用AI帮财务人省时间、提效率、不加班。
-      </p>
-      <div style="display:flex; gap:0.8rem; flex-wrap:wrap;">
-        <a href="#contact" class="btn btn-primary">联系我</a>
-        <a href="#proof" class="btn btn-outline">看数据 →</a>
+    <section style="padding:3rem 0 2rem;">
+      <div class="hero">
+        <div class="hero-text">
+          <div style="display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span class="section-tag">Personal Portfolio</span>
+          </div>
+          <h1>
+            出纳出身，<br/>
+            <span class="gradient">5年做到财务经理</span>
+          </h1>
+          <p style="font-size:1.05rem; max-width:500px;">
+            不靠加班，靠效率思维。<br/>
+            专注AI+财务提效，帮财务人省时间、提效率、不加班。
+          </p>
+          <div class="social-links">
+            <a href="https://xiaohongshu.com" target="_blank">📕 小红书</a>
+            <a href="mailto:ajmd@ajmd.me">✉️ 邮箱</a>
+            <a href="#contact">💬 微信</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-placeholder">
+            <span class="initials">LZQ</span>
+          </div>
+        </div>
       </div>
     </section>
   </div>
 
-  <!-- About -->
-  <div style="background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <!-- 关于 / About -->
+  <div style="background:var(--bg-card); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
     <div class="container">
       <section id="about">
-        <p class="section-label">关于我</p>
-        <div class="about-grid">
-          <div>
-            <h2>从出纳到财务经理，<br/>我做对了什么</h2>
-            <p>
-              很多人问我：你5年怎么做到的？<br/>
-              我的答案从来不是"我很努力"，而是<strong style="color:var(--text);">"我找到了更聪明的方法"</strong>。
-            </p>
-            <p>
-              出纳出身，基础比别人薄，所以我必须比所有人更早学会用工具。<br/>
-              从Excel公式到RPA，从财务系统到AI——工具每升级一次，我的效率就翻一倍。
-            </p>
-            <p>
-              2025年开始深入AI+财务，发现大多数财务人不是不想用AI，是没人教他们怎么用。<br/>
-              于是我做了「卡戴珊玩财务」，用最直白的方式讲AI+财务干货。
-            </p>
-            <p style="margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid var(--border); font-size:0.9rem; color:var(--text-muted);">
-              现在的身份：财务经理 / 小红书博主 / AI效率实践者
-            </p>
+        <div style="text-align:center; max-width:700px; margin:0 auto 3rem;">
+          <span class="section-tag">About</span>
+          <h2>从出纳到财务经理，<br/>我做对了什么</h2>
+          <p style="color:var(--text-muted);">
+            不是能力多强，是找到了更聪明的方法。
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div style="font-size:2rem; margin-bottom:1rem;">📈</div>
+            <h3>成长路径</h3>
+            <div style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+              <div style="display:flex; gap:1rem;">
+                <span style="font-size:0.78rem; color:var(--text-muted); min-width:70px; padding-top:0.1rem;">2026 · 现在</span>
+                <div>
+                  <p style="font-weight:600; color:#fff; margin:0;">财务经理 · 畅维公司</p>
+                  <p style="font-size:0.82rem; color:var(--text-muted); margin:0;">全盘财务 + AI提效</p>
+                </div>
+              </div>
+              <div style="display:flex; gap:1rem;">
+                <span style="font-size:0.78rem; color:var(--text-muted); min-width:70px; padding-top:0.1rem;">2025</span>
+                <div>
+                  <p style="font-weight:600; color:#fff; margin:0;">小红书起步</p>
+                  <p style="font-size:0.82rem; color:var(--text-muted); margin:0;">「卡戴珊玩财务」账号</p>
+                </div>
+              </div>
+              <div style="display:flex; gap:1rem;">
+                <span style="font-size:0.78rem; color:var(--text-muted); min-width:70px; padding-top:0.1rem;">2022-2024</span>
+                <div>
+                  <p style="font-weight:600; color:#fff; margin:0;">会计主管</p>
+                  <p style="font-size:0.82rem; color:var(--text-muted); margin:0;">总账 · 报表 · 税务</p>
+                </div>
+              </div>
+              <div style="display:flex; gap:1rem;">
+                <span style="font-size:0.78rem; color:var(--text-muted); min-width:70px; padding-top:0.1rem;">2021</span>
+                <div>
+                  <p style="font-weight:600; color:#fff; margin:0;">出纳起步</p>
+                  <p style="font-size:0.82rem; color:var(--text-muted); margin:0;">从零开始</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="card" style="padding:1.5rem;">
-              <p style="font-size:0.8rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); margin-bottom:1rem;">走过的路</p>
-              <div style="display:flex; flex-direction:column; gap:1.2rem;">
-                <div>
-                  <p style="font-size:0.8rem; color:var(--text-muted); margin:0;">2026 · 现在</p>
-                  <p style="font-weight:600; color:var(--text); margin:0.1rem 0 0;">财务经理</p>
-                  <p style="font-size:0.85rem; color:var(--text-secondary); margin:0;">畅维公司 · 全盘财务</p>
-                </div>
-                <div>
-                  <p style="font-size:0.8rem; color:var(--text-muted); margin:0;">2025</p>
-                  <p style="font-weight:600; color:var(--text); margin:0.1rem 0 0;">小红书起步</p>
-                  <p style="font-size:0.85rem; color:var(--text-secondary); margin:0;">「卡戴珊玩财务」账号</p>
-                </div>
-                <div>
-                  <p style="font-size:0.8rem; color:var(--text-muted); margin:0;">2022 · 2024</p>
-                  <p style="font-weight:600; color:var(--text); margin:0.1rem 0 0;">会计主管</p>
-                  <p style="font-size:0.85rem; color:var(--text-secondary); margin:0;">总账 · 报表 · 税务</p>
-                </div>
-                <div>
-                  <p style="font-size:0.8rem; color:var(--text-muted); margin:0;">2021 · 起步</p>
-                  <p style="font-weight:600; color:var(--text); margin:0.1rem 0 0;">出纳</p>
-                  <p style="font-size:0.85rem; color:var(--text-secondary); margin:0;">从零开始</p>
-                </div>
+
+          <div class="card">
+            <div style="font-size:2rem; margin-bottom:1rem;">💡</div>
+            <h3>核心观点</h3>
+            <div style="margin-top:1rem; display:flex; flex-direction:column; gap:1.2rem;">
+              <div>
+                <p style="font-weight:600; color:#fff; margin:0; font-size:0.95rem;">效率不是做更快，是少做</p>
+                <p style="font-size:0.85rem; color:var(--text-muted); margin:0.3rem 0 0;">把80%重复工作交给工具，腾出精力做那20%真正有价值的事。</p>
+              </div>
+              <div>
+                <p style="font-weight:600; color:#fff; margin:0; font-size:0.95rem;">AI是放大器，不是替代品</p>
+                <p style="font-size:0.85rem; color:var(--text-muted); margin:0.3rem 0 0;">财务人的专业判断、业务理解——这些AI替代不了。但重复劳动你本就不该自己做。</p>
+              </div>
+              <div>
+                <p style="font-weight:600; color:#fff; margin:0; font-size:0.95rem;">工具在变，底层逻辑不变</p>
+                <p style="font-size:0.85rem; color:var(--text-muted); margin:0.3rem 0 0;">解决问题比掌握工具更重要。从Excel到AI，本质都是用更好的方法解决同样的问题。</p>
               </div>
             </div>
           </div>
@@ -78,129 +105,130 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 
-  <!-- Perspective -->
+  <!-- 专业领域 -->
   <div class="container">
-    <section id="perspective">
-      <p class="section-label">我的观点</p>
-      <h2>财务人的核心问题<br/>不是能力，是效率思维</h2>
-      <p class="text-lg" style="max-width:560px; margin-bottom:2rem;">
-        做了这些年财务，我越来越确定一件事。
+    <section class="section-center">
+      <span class="section-tag">Expertise</span>
+      <h2>我的专业领域</h2>
+      <p style="color:var(--text-muted); max-width:500px; margin:0 auto 3rem;">
+        会计出身 + AI实操，两个方向打通。
       </p>
-
-      <ul class="perspective-list" style="max-width:700px;">
-        <li>
-          <span class="perspective-num">01</span>
-          <div>
-            <strong style="color:var(--text);">Excel再熟练，不如会提问</strong>
-            <p style="margin:0.2rem 0 0; font-size:0.9rem;">一个财务人花20年学Excel，不如花20分钟学会怎么跟AI对话。工具在变，底层逻辑不变——解决问题比掌握工具更重要。</p>
+      <div class="grid-3">
+        <div class="card" style="text-align:center;">
+          <p style="font-size:2.5rem; margin-bottom:0.5rem;">📊</p>
+          <h3>全盘财务</h3>
+          <p style="font-size:0.85rem;">出纳→会计→主管→经理，完整财务链路实战经验。</p>
+          <div style="margin-top:1rem;">
+            <span class="tag">总账</span>
+            <span class="tag">报表</span>
+            <span class="tag">税务</span>
           </div>
-        </li>
-        <li>
-          <span class="perspective-num">02</span>
-          <div>
-            <strong style="color:var(--text);">效率不是做更快，是少做</strong>
-            <p style="margin:0.2rem 0 0; font-size:0.9rem;">我升得快不是因为加班多，是学会了把80%的重复工作交给工具，腾出精力做那20%真正有价值的事。</p>
+        </div>
+        <div class="card" style="text-align:center;">
+          <p style="font-size:2.5rem; margin-bottom:0.5rem;">🤖</p>
+          <h3>AI+财务</h3>
+          <p style="font-size:0.85rem;">用AI做发票管理、对账分析、月结报告，效率提升4倍+。</p>
+          <div style="margin-top:1rem;">
+            <span class="tag">提示词</span>
+            <span class="tag">自动化</span>
+            <span class="tag">效率</span>
           </div>
-        </li>
-        <li>
-          <span class="perspective-num">03</span>
-          <div>
-            <strong style="color:var(--text);">AI不是来替代你的，是来放大你的</strong>
-            <p style="margin:0.2rem 0 0; font-size:0.9rem;">财务人的专业判断、业务理解、风险意识——这些AI替代不了。但数据录入、报表生成、差异分析——这些你本来就不该自己做。</p>
+        </div>
+        <div class="card" style="text-align:center;">
+          <p style="font-size:2.5rem; margin-bottom:0.5rem;">📝</p>
+          <h3>内容创作</h3>
+          <p style="font-size:0.85rem;">小红书「卡戴珊玩财务」——用最直白的方式讲AI+财务干货。</p>
+          <div style="margin-top:1rem;">
+            <span class="tag">小红书</span>
+            <span class="tag">干货</span>
+            <span class="tag">反差</span>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
   </div>
 
-  <!-- Proof -->
-  <div style="background:#fff; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <!-- 作品 / Works -->
+  <div style="background:var(--bg-card); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
     <div class="container">
-      <section id="proof">
-        <p class="section-label">数据说话</p>
-        <h2>不是空谈，是验证过的</h2>
-        <p class="text-lg" style="max-width:560px; margin-bottom:2rem;">
-          每一个观点，都在小红书上被真实数据验证过。
-        </p>
-
-        <div class="grid-3" style="margin-bottom:3rem;">
-          <div class="stat card">
-            <p class="stat-num">1,031</p>
-            <p class="stat-label">单篇最高曝光</p>
-          </div>
-          <div class="stat card">
-            <p class="stat-num">14</p>
-            <p class="stat-label">单篇最高收藏</p>
-          </div>
-          <div class="stat card">
-            <p class="stat-num">16.6%</p>
-            <p class="stat-label">最高点击率</p>
-          </div>
+      <section id="works">
+        <div style="text-align:center; max-width:700px; margin:0 auto 3rem;">
+          <span class="section-tag">Works</span>
+          <h2>精选内容</h2>
+          <p style="color:var(--text-muted);">数据最好的几篇小红书笔记。</p>
         </div>
 
-        <h3 style="margin-bottom:0.5rem;">精选内容</h3>
-        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1.5rem;">数据最好的几篇，点击跳转小红书查看完整内容。</p>
-
-        <div style="display:flex; flex-direction:column; gap:0.8rem;">
-          <a href="https://xiaohongshu.com" target="_blank" style="text-decoration:none;">
-            <div class="card" style="display:flex; justify-content:space-between; align-items:center; padding:1rem 1.5rem;">
-              <div>
-                <p style="font-weight:600; color:var(--text); margin:0;">做了5年财务才明白：Excel再6，不如会问AI</p>
-                <p style="font-size:0.82rem; color:var(--text-muted); margin:0.2rem 0 0;">收藏14 · 曝光1031 · 2026-05-12</p>
-              </div>
-              <span style="color:var(--accent); font-size:0.85rem; white-space:nowrap;">阅读 →</span>
+        <div class="grid-2">
+          <a href="https://xiaohongshu.com" target="_blank" class="project-card">
+            <div class="project-thumb">
+              <span class="icon">📄</span>
+            </div>
+            <h3>Excel再6，不如会问AI</h3>
+            <p>3个AI提问公式，让工作效率翻倍。收藏14 · 曝光1031</p>
+            <div style="margin-top:0.5rem;">
+              <span class="tag">最受欢迎</span>
+              <span class="tag">提示词</span>
             </div>
           </a>
 
-          <a href="https://xiaohongshu.com" target="_blank" style="text-decoration:none;">
-            <div class="card" style="display:flex; justify-content:space-between; align-items:center; padding:1rem 1.5rem;">
-              <div>
-                <p style="font-weight:600; color:var(--text); margin:0;">月底结账从8小时→2小时，我用了3个AI提示词</p>
-                <p style="font-size:0.82rem; color:var(--text-muted); margin:0.2rem 0 0;">收藏4 · 曝光536 · 2026-05-09</p>
-              </div>
-              <span style="color:var(--accent); font-size:0.85rem; white-space:nowrap;">阅读 →</span>
+          <a href="https://xiaohongshu.com" target="_blank" class="project-card">
+            <div class="project-thumb">
+              <span class="icon">📋</span>
+            </div>
+            <h3>月底结账从8小时→2小时</h3>
+            <p>月结效率提升4倍的核心方法。收藏4 · 曝光536</p>
+            <div style="margin-top:0.5rem;">
+              <span class="tag">月结</span>
+              <span class="tag">效率</span>
             </div>
           </a>
 
-          <a href="https://xiaohongshu.com" target="_blank" style="text-decoration:none;">
-            <div class="card" style="display:flex; justify-content:space-between; align-items:center; padding:1rem 1.5rem;">
-              <div>
-                <p style="font-weight:600; color:var(--text); margin:0;">3个AI提示词搞定银行对账</p>
-                <p style="font-size:0.82rem; color:var(--text-muted); margin:0.2rem 0 0;">收藏1 · 曝光512 · 2026-05-09</p>
-              </div>
-              <span style="color:var(--accent); font-size:0.85rem; white-space:nowrap;">阅读 →</span>
+          <a href="https://xiaohongshu.com" target="_blank" class="project-card">
+            <div class="project-thumb">
+              <span class="icon">🏦</span>
+            </div>
+            <h3>3个AI提示词搞定银行对账</h3>
+            <p>从2小时到3分钟，对账差异分析的AI模板。曝光512</p>
+            <div style="margin-top:0.5rem;">
+              <span class="tag">对账</span>
+              <span class="tag">模板</span>
             </div>
           </a>
+
+          <a href="https://xiaohongshu.com" target="_blank" class="project-card">
+            <div class="project-thumb">
+              <span class="icon">📊</span>
+            </div>
+            <h3>财务自动化，你们公司到哪一级了？</h3>
+            <p>引发187次观看和讨论。单篇最高曝光1130</p>
+            <div style="margin-top:0.5rem;">
+              <span class="tag">自动化</span>
+              <span class="tag">讨论</span>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align:center; margin-top:2rem;">
+          <a href="https://xiaohongshu.com" target="_blank" class="btn btn-outline">在小红书查看更多 →</a>
         </div>
       </section>
     </div>
   </div>
 
-  <!-- Contact -->
+  <!-- CTA / Contact -->
   <div class="container">
-    <section id="contact" style="text-align:center; padding:4rem 0;">
-      <p class="section-label">联系我</p>
-      <h2>一起聊聊AI+财务</h2>
-      <p class="text-lg" style="max-width:450px; margin:0 auto 2rem;">
+    <section id="contact" class="cta-section">
+      <h2>一起聊聊<span class="gradient">AI+财务</span></h2>
+      <p style="max-width:400px; margin:0 auto 2rem;">
         欢迎交流、合作、吐槽。<br/>小红书回复最快。
       </p>
-
-      <div class="contact-links" style="margin-bottom:2.5rem;">
-        <a href="https://xiaohongshu.com" target="_blank">
-          <span style="font-size:1.3rem;">📕</span> 小红书 @卡戴珊玩财务
-        </a>
-        <a href="mailto:ajmd@ajmd.me">
-          <span style="font-size:1.3rem;">✉️</span> ajmd@ajmd.me
-        </a>
-        <a href="#">
-          <span style="font-size:1.3rem;">💬</span> 微信 · 备注"AI财务"
-        </a>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary">📕 小红书</a>
+        <a href="mailto:ajmd@ajmd.me" class="btn btn-outline">✉️ 邮箱</a>
       </div>
-
-      <div style="padding:2rem; background:var(--accent-light); border-radius:var(--radius); max-width:500px; margin:0 auto;">
-        <p style="font-weight:600; color:var(--accent); margin-bottom:0.3rem;">🎁 免费领取</p>
-        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1rem;">5个财务AI提示词 · 关注小红书后私信"提示词"</p>
-        <a href="https://xiaohongshu.com" target="_blank" class="btn btn-primary">去小红书领取</a>
+      <div style="margin-top:2rem; padding:1.5rem; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); max-width:400px; margin-left:auto; margin-right:auto;">
+        <p style="font-weight:600; color:var(--accent); margin-bottom:0.3rem;">🎁 免费领5个财务AI提示词</p>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0;">关注小红书 → 私信"提示词"</p>
       </div>
     </section>
   </div>
